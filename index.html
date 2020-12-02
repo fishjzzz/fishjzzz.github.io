@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>判断是否为闰年</title>
+        <script type="text/javascript">
+            function check(){
+                let value = document.getElementsByName("input")[0].value;
+                if(!Number(value)){
+                    alert("格式错误");
+                    window.location.href="https://www.baidu.com/";
+                }else if(Number(value)%4!=0){
+                    alert("not");
+                }else if(Number(value)%100 == 0){
+                    alert("not");
+                }else{
+                    alert("yes!")
+                }
+            }
+        </Script>
+        <style type="text/css">
+            h1{
+                text-align: center;
+            }
+            div{
+                text-align: center;
+            }
+            button{
+                margin-left: 30px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>
+            闰年判断
+        </h1>
+        <div><input type="text" name="input" /><button onclick="check()">检验</button></div>
+    </body>
+</html>
